@@ -62,6 +62,7 @@ const scroll = new LocomotiveScroll({
     });
   
     element.addEventListener("mousemove", function (dets) {
+      //mouse total distance is clientY-div ka top
       var diff = dets.clientY - element.getBoundingClientRect().top;
       diffrot = dets.clientX - rotate;
       rotate = dets.clientX;
